@@ -1,7 +1,9 @@
-html {
-}
-body {
-    display: none;
+#everything {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: black;
 }
 html, body {
     width: 100%;
@@ -10,7 +12,9 @@ html, body {
     overflow-x: hidden; 
     background-color: black;
 }
-
+body {
+    opacity: 0.0;
+}
 #sun {
     position: absolute;
     bottom: 300px;
@@ -20,7 +24,7 @@ html, body {
     height: 30%;
     width: auto;
     z-index: -1;
-    display: none;
+    opacity: 0.0;
 }
 #sunset {
     position: absolute;
@@ -53,10 +57,10 @@ html, body {
     @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
     @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-#everything {
+#blackness {
     position: absolute;
+    height: 2000px;
     width: 100%;
-    height: 100%;
-    z-index: 100;
-    background-color: black;
+    z-index: 5;
+    bottom: 0px;
 }
