@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	$( "body" ).animate({
 		    opacity: 1.0,
-		}, 4000, "easeInOutQuad" );
+		}, 5000, "easeInQuint" );
 
 	$( "#sun" ).animate({
 		    opacity: 1.0,
