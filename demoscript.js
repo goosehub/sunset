@@ -2,21 +2,29 @@ $(document).ready(function() {
 
 	$( "body" ).animate({
 		    opacity: 1.0,
-		}, 5000, "easeInQuint" );
+		}, 4000, "easeInQuint" );
 
-	$( "#sun" ).animate({
-		    opacity: 1.0,
-		}, 6000, "linear" );
+	$( "#sun" ).fadeIn(6000, "easeInSine" );
 
 	$( "#mountains" ).delay( 4000 ).animate({
 	    marginTop: "-25%",
 	}, 3000, "easeOutExpo");
 
+	$( "#clickTheSun" ).delay( 6500 ).animate({
+	    opacity: 0.5,
+	    letterSpacing: '10px',
+	    marginLeft: "-250px",
+	}, 2000 , "easeOutBack" );
+
 	$('#sun').on("click", function(){
+
+		$( "#clickTheSun" ).animate({
+		    marginBottom: "-300px",
+		}, 1500, "easeInElastic" );
 
 		$( "#sun" ).animate({
 		    marginBottom: "-300px",
-		}, 8000, "easeInSine" );
+		}, 12000, "swing" );
 
 		$( "#sunset, #sun" ).animate({
 		    opacity: 0.0,
