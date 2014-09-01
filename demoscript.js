@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 		$( "#sun" ).animate({
 		    marginBottom: "-300px",
-		}, 12000, "swing" );
+		}, 8000, "easeInSine" );
 
 		$( "#sunset, #sun" ).animate({
 		    opacity: 0.0,
