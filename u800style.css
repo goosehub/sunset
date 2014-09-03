@@ -9,3 +9,15 @@
     z-index: -1;
     display: none;
 }
+#clickTheSun {
+    position: fixed;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -40px;
+    font-family: "hellogoodbye";
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: -0.3em;
+    word-spacing: 1000px;
+    opacity: 0.0;
+}

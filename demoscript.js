@@ -13,14 +13,14 @@ $(document).ready(function() {
 	$( "#clickTheSun" ).delay( 6500 ).animate({
 	    opacity: 0.5,
 	    letterSpacing: '10px',
-	    marginLeft: "-250px",
+	    marginLeft: "-15%",
 	}, 2000 , "easeOutBack" );
 
 	$('#sun').on("click", function(){
 
 		$( "#clickTheSun" ).animate({
 		    marginBottom: "-300px",
-		}, 1500, "easeInElastic" );
+		}, 1000, "easeInBack" );
 
 		$( "#sun" ).animate({
 		    marginBottom: "-300px",
